@@ -50,7 +50,7 @@ header {
 }
 
 .avatar {
-    
+
     max-width: 50px;
     border-radius: 50%;
 }
@@ -161,6 +161,10 @@ h2 {
 }
 
 /* CONTATO */
+.contato{
+    display: flex;
+    justify-content: space-between;
+}
 .contato ul {
     list-style: none;
 }
@@ -171,7 +175,36 @@ h2 {
     align-items: center;
     gap: 10px;
 }
+form{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 2vh;
+    justify-content: space-between;
+}
+.form-nec{
+    display: inline-flex;
+    flex-direction: column;
+}
+input, textarea{
+    margin-top: 1vh;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 7px;
+}
+button[type="submit"]{
+    margin-top: 1vh;
+    padding: 5px;
+    color: #ffffff;
+    border:transparent;
+    background-color: #5a8cf9;
+    border-radius: 5px;
 
+}
 .contato a {
     color: #aaa;
     text-decoration: none;
