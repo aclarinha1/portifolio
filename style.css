@@ -252,7 +252,7 @@ footer {
 }
 footer img{
     max-width: 3vh;
-    min-height: 3vh;
+    max-height: 3vh;
 }
 footer ul{
     gap: 10vh;
