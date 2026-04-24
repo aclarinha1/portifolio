@@ -38,6 +38,7 @@ header {
     display: flex;
     gap: 30px;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .nav a {
@@ -291,4 +292,12 @@ footer li{
         justify-content: center;
     }
 }
+@media (max-width: 600px){
+    .form-nec{
+        flex-direction: column;
+    }
 
+    button[type="submit"]{
+        width: 100%;
+    }
+}
