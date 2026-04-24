@@ -300,4 +300,7 @@ footer li{
     button[type="submit"]{
         width: 100%;
     }
+    .inicio h1{
+        font-size: 5vh;
+    }
 }
