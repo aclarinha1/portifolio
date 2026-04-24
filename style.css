@@ -181,7 +181,7 @@ h2 {
 }
 form{
     margin-top: 1vh;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     
 }
@@ -189,17 +189,17 @@ form h3{
     display: inline-flex;
 }
 .form{
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     gap: 2vh;
-    
-    
+    align-items: stretch;
 }
 .form-nec {
     display: flex;
     gap: 2vh;
-    align-items: flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .form-nec > div:first-child {
@@ -218,17 +218,25 @@ input, textarea{
     border: 1px solid gray;
     border-radius: 5px;
     padding: 7px;
+    width: 100%;
+}
+.conjunto-inp{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
 button[type="submit"]{
     display: inline-flex;
     justify-content: center;
     width: 100%;
+    max-width: 100%;
     margin-top: 1vh;
     padding: 5px;
     color: #ffffff;
     border:transparent;
     background-color: #5a8cf9;
     border-radius: 5px;
+    
 
 }
 .contato a {
@@ -283,3 +291,4 @@ footer li{
         justify-content: center;
     }
 }
+
