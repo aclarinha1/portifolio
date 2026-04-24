@@ -183,6 +183,7 @@ form{
     margin-top: 1vh;
     display: inline-flex;
     flex-direction: column;
+    
 }
 form h3{
     display: inline-flex;
@@ -192,11 +193,13 @@ form h3{
     flex-direction: column;
     gap: 2vh;
     
+    
 }
 .form-nec {
     display: flex;
     gap: 2vh;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .form-nec > div:first-child {
