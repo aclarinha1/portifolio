@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,12 @@
 <body>
     <header>
         <div class="nav">
-            <img class="avatar" src="imagens/icones/avatar.png">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
+            <a href="index.html"><img class="avatar" src="imagens/icones/avatar.png"></a>
+
+            <button class="menu-toggle">☰</button>
+
+            <ul class="menu">
+                <li><a href="#topo">HOME</a></li>
                 <li><a href="#historia">QUEM SOU?</a></li>
                 <li><a href="#projetos">PROJETOS</a></li>
                 <li><a href="#contato">CONTATO</a></li>
@@ -19,7 +22,7 @@
         </div>
     </header>
     <main>
-        <section class="inicio">
+        <section id="topo" class="inicio">
             <div>
                 <h1>Olá, meu nome é Clara.</h1>
                 <p>Sou uma desenvolvedora iniciante, com muito a aprender mas também a oferecer, que tal conhecer um pouco mais sobre mim?</p>
@@ -94,5 +97,21 @@
             <li><img src="imagens/icones/instagram.png"><a href="https://www.instagram.com/clarinhaa_048?igsh=bXR0cnNtdnFicG9j">Instagram</a></li>
         </ul>
     </footer>
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        const links = document.querySelectorAll('.menu a');
+
+        toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        });
+
+        // 👇 aqui está o que você quer
+        links.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('active');
+        });
+        });
+    </script>
 </body> 
 </html>

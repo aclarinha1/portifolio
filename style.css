@@ -34,13 +34,14 @@ header {
     
 }
 
-.nav ul {
+.menu {
     display: flex;
     gap: 30px;
     list-style: none;
-    flex-wrap: wrap;
 }
-
+.menu-toggle{
+    display: none;
+}
 .nav a {
     text-decoration: none;
     color: #aaa;
@@ -78,7 +79,7 @@ header {
 }
 
 .inicio img {
-    max-width: 800px;
+    max-width: 600px;
     border-radius: 20px;
     filter: grayscale(100%);
     transition: 0.4s;
@@ -279,10 +280,11 @@ footer li{
 /* RESPONSIVO */
 @media (max-width: 900px) {
     .inicio {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
+        padding-top: 15vh;  
     }
-
+    
     .inicio img {
         margin-top: 30px;
         width: 90%;
@@ -291,8 +293,15 @@ footer li{
     .container {
         justify-content: center;
     }
+    .scroll-down{
+        margin-top: 8vh;
+    }
 }
+
 @media (max-width: 600px){
+    .scroll-down{
+        margin-top: 5vh;
+    }
     .form-nec{
         flex-direction: column;
     }
@@ -303,4 +312,31 @@ footer li{
     .inicio h1{
         font-size: 5vh;
     }
+    .inicio p {
+        text-align: left;
+    }
+    .menu-toggle {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+  }
+
+  .menu {
+    position: absolute;
+    top: 70px; /* altura da navbar */
+    right: 0;
+    width: 100%;
+    background: #0f0f0f;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1vh;
+    display: none;
+
+  }
+
+  .menu.active {
+    display: flex;
+  }
 }
